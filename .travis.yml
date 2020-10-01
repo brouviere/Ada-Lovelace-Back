@@ -1,7 +1,12 @@
 language: node_js
 node_js: 12
+
+os: linux
+dist: xenial
+
 stages:
 - Build
+
 jobs:
   include:
   - name: build
