@@ -10,7 +10,7 @@ branches:
   - develop
 
 stages:
-  - name: Build
+  - name: build
 
 jobs:
   include:
