@@ -1,20 +1,21 @@
 language: node_js
 node_js: 12
-
 os: linux
 dist: xenial
-
 branches:
   only:
   - master
   - develop
-
 stages:
-  - name: build
-
+- name: build
 jobs:
   include:
   - name: build
     stage: Build
     install: npm i
     script: npm run build
+deploy:
+  provider: heroku
+  app: ada-lovelace-back
+  api_key:
+    secure: hpIKm2YDVi8fME1Qcl0kXuHypEbqix1/3uQKTkYJ9wZbnpzlTe9M3n7/auRgg7GSUZv7DDcsb0yfIu9mqfMPwrU/1eHkBGsOFbAukMs2orU2FhBIxFqGWw1B9HjxfVLBb/d69e44xKvN5m1aXNEP7avadb/K1Lpj/Zd3Sd1XqrgnyUQ03otDm/+RBXkii/AVQCEhd9NBbveUHrni+YTi0MRbDQsqPu3MgGct1d9F7e8WbVOMpEoPfJZBRsTXwI2CdVQVFWWIUZleATnKZJYYush2eSslJOHGYn9NOTGVIN1BMlapvvCZUO1cgbQomUO3LQ8FfmVCujVtN0uI8tdgQ9cGa8dycZZhIIS2WTm/UCniEtasDPWoEqOV93L0O2qMe1DrNe2kNU8b9Ff8D0JoflaztI6cxbgF5nWu7ET7B0aLNSrqTmgUf3VxcByuF81zrIxgr2qlOLKta4uiNEIKaLtYQG8T6MKkT1Ftuzmp8kMjozeyP9YlCsOWniCDCEvwapy/El1xw8RDzb4Jr1Rr/kFcB2Uv0fXj3Oki+cxpNcuUpsoQCvJ3nfEDneOstdpVbwVYyUFXsikJC9xxBqnf1NJfSqZzRG5Z6ElTr0ibLPlRQV2wCCwYO3X1U7X4b29EUPsN4Q1eY9dF1rzmSbh73rpmn7VmoVLfk+wzjlQ2PrY=
