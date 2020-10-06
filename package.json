@@ -15,7 +15,7 @@
     "express": "^4.17.1",
     "express-session": "^1.17.1",
     "helmet": "^3.23.3",
-    "mongoose": "^5.10.3",
+    "mongoose": "^5.10.7",
     "morgan": "^1.10.0",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
@@ -38,7 +38,6 @@
     "@types/typescript": "^2.0.0",
     "@types/cookie-parser": "^1.4.2",
     "jest": "^26.1.0",
-    "nodemon": "^2.0.4",
     "ts-jest": "^26.3.0"
   },
   "scripts": {
